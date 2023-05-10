@@ -1,11 +1,11 @@
 {
-  "name": "pintura-example-react",
-  "version": "0.1.0",
   "private": true,
+  "name": "pintura-example-react",
+  "version": "0.0.0",
   "dependencies": {
     "@pqina/filepond-plugin-image-editor": "^8.57.5",
     "@pqina/pintura": "^8.57.6",
-    "@pqina/react-pintura": "^8.57.5",
+    "@pqina/react-pintura": "^9.0.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
