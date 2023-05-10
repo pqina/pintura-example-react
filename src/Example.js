@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 // react-pintura
 import { PinturaEditor } from "@pqina/react-pintura";
