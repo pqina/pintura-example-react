@@ -2,6 +2,10 @@
   "private": true,
   "name": "pintura-example-react",
   "version": "0.0.0",
+  "author": "Rik Schennink at PQINA",
+  "license": "https://pqina.nl/pintura/license/",
+  "homepage": "https://pqina.nl/pintura/",
+  "description": "A Pintura React example Project",
   "dependencies": {
     "@pqina/filepond-plugin-image-editor": "^8.57.5",
     "@pqina/pintura": "^8.57.6",
