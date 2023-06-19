@@ -80,7 +80,9 @@ export default function Example() {
         <a href="https://pqina.nl/pintura/docs/v8/api/video-editor/">
           video extension
         </a>{" "}
-        related code in the `ExampleVideo.js` file.
+        related code in the `ExampleVideo.js` file. Please note that the video
+        editor extension is only available on the PQINA private npm and requires
+        purchasing a license.
       </p>
 
       <div style={{ height: "70vh" }}>
