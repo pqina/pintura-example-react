@@ -4,7 +4,7 @@ Run `npm install` to install project dependencies, then run `npm start` to start
 
 Navigate to http://localhost:3000 to view the project.
 
-Or try it out right now and [open the project on StackBlitz](https://stackblitz.com/github/pqina/pintura-example-react)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/pqina/pintura-example-react)
 
 ### License
 
