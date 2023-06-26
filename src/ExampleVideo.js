@@ -6,23 +6,22 @@ import { PinturaEditor } from "@pqina/react-pintura";
 // pintura
 import "@pqina/pintura/pintura.css";
 import { getEditorDefaults } from "@pqina/pintura";
-
 /*
-
 // Import Pintura Video extension dependencies
 import {
-    setPlugins, 
-    createDefaultImageWriter, 
-    createDefaultMediaWriter, 
-    imageStateToCanvas 
-} from '@pqina/pintura';
-import '@pqina/pintura-video/pinturavideo.css';
+  setPlugins,
+  createDefaultImageWriter,
+  createDefaultMediaWriter,
+  imageStateToCanvas,
+} from "@pqina/pintura";
+
+import "@pqina/pintura-video/pinturavideo.css";
 import {
-    plugin_trim_locale_en_gb, 
-    plugin_trim, 
-    createDefaultVideoWriter, 
-    createMediaStreamEncoder
-} from '@pqina/pintura-video';
+  plugin_trim_locale_en_gb,
+  plugin_trim,
+  createDefaultVideoWriter,
+  createMediaStreamEncoder,
+} from "@pqina/pintura-video";
 
 // Load the Trim plugin view
 setPlugins(plugin_trim);
@@ -31,39 +30,35 @@ setPlugins(plugin_trim);
 
 // get default properties
 const editorDefaults = getEditorDefaults({
-  stickers: ["😎"],
-
   /*
-
-    locale: {
-        // Add the Trim plugin locale
-        ...plugin_trim_locale_en_gb,
+  locale: {
+    // Add the Trim plugin locale
+    ...plugin_trim_locale_en_gb,
+  },
+  imageWriter: createDefaultMediaWriter(
+    // Generic Media Writer options, passed to image and video writer
+    {
+      targetSize: {
+        width: 400,
+      },
     },
-    imageWriter: createDefaultMediaWriter(
-        // Generic Media Writer options, passed to image and video writer
-        {
-            targetSize: {
-                width: 400,
-            },
-        },
-        [
-            // For handling images
-            createDefaultImageWriter(),
+    [
+      // For handling images
+      createDefaultImageWriter(),
 
-            // For handling videos
-            createDefaultVideoWriter({
-                // Video writer instructions here
-                // ...
+      // For handling videos
+      createDefaultVideoWriter({
+        // Video writer instructions here
+        // ...
 
-                // Encoder to use
-                encoder: createMediaStreamEncoder({
-                    imageStateToCanvas,
-                }),
-            }),
-        ]
-    )
-
-    */
+        // Encoder to use
+        encoder: createMediaStreamEncoder({
+          imageStateToCanvas,
+        }),
+      }),
+    ]
+  ),
+  */
 });
 
 export default function Example() {
@@ -89,9 +84,10 @@ export default function Example() {
         <PinturaEditor
           {...editorDefaults}
           src={"./video.mp4"}
+          stickers={["😎"]}
           imageCropAspectRatio={1}
-          onLoad={(res) => console.log("load image", res)}
-          onProcess={({ dest }) => setResult(URL.createObjectURL(dest))}
+          onLoad={(res) => console.log("load media", res)}
+          onProcess={({ dest }) => dest && setResult(URL.createObjectURL(dest))}
         />
       </div>
 
