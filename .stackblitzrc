@@ -1,0 +1,3 @@
+{
+  "startCommand": "npm install @pqina/pintura@8.x @pqina/react-pintura@9.x @pqina/filepond-plugin-image-editor@9.x && npm start"
+}
