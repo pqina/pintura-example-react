@@ -1,4 +1,4 @@
-# Pintura React example project
+# React Image Editor with Pintura example project
 
 Run `npm install` to install project dependencies, then run `npm start` to start the development server.
 
