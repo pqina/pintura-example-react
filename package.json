@@ -9,6 +9,7 @@
   "dependencies": {
     "@pqina/filepond-plugin-image-editor": "^9.x",
     "@pqina/pintura": "^8.x",
+    "@pqina/pintura-video": "^1.14.1",
     "@pqina/react-pintura": "^9.x",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
