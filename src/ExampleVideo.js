@@ -78,7 +78,7 @@ export default function Example() {
           src={"./video.mp4"}
           stickers={["😎"]}
           imageCropAspectRatio={1}
-          onLoad={(res) => console.log("load media", res)}
+          onLoad={(res) => console.log("load video", res)}
           onProcess={({ dest }) => dest && setResult(URL.createObjectURL(dest))}
         />
       </div>
